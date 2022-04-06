@@ -5979,11 +5979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elian\\source\\repos\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE.csproj",
+      "projectUniqueName": "C:\\Users\\Elian\\source\\repos\\NetCoreWebAppEstatisticasNomes\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE.csproj",
       "projectName": "EstatisticasNomesIBGE",
-      "projectPath": "C:\\Users\\Elian\\source\\repos\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE.csproj",
+      "projectPath": "C:\\Users\\Elian\\source\\repos\\NetCoreWebAppEstatisticasNomes\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE.csproj",
       "packagesPath": "C:\\Users\\Elian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elian\\source\\repos\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE\\obj\\",
+      "outputPath": "C:\\Users\\Elian\\source\\repos\\NetCoreWebAppEstatisticasNomes\\EstatisticasNomesIBGE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

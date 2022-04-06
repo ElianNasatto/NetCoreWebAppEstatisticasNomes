@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jux3++X7g7Y1L5zTWjw+bSeEvo4ym5ESTvrAckKFKsGEi93P0oCEZDB6xdESWwi2uqz1hYZ0JCAVsIlZ/rm8uA==",
+  "dgSpecHash": "zA9dRwNRpb57HqGfHpyHB4kQesqLXVPlJ283H+1U3q6dTwWI4YY3NR/STlush80pRwo5ZP9dvKeyo6g4z1bLCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elian\\source\\repos\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE.csproj",
+  "projectFilePath": "C:\\Users\\Elian\\source\\repos\\NetCoreWebAppEstatisticasNomes\\EstatisticasNomesIBGE\\EstatisticasNomesIBGE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elian\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Elian\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
