@@ -1,0 +1,45 @@
+﻿@model IEnumerable<EstatisticasNomesIBGE.Models.Dados>
+
+@{
+    ViewData["Title"] = "Resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        <h1>@Html.DisplayFor(modelItem => item.Nome)</h1>
+        <h5>@Html.DisplayFor(modelItem => item.Sexo)</h5>
+        <h5>@Html.DisplayFor(modelItem => item.Localidade)</h5>
+    </div>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(modelItem => item.Res.FirstOrDefault().Periodo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(modelItem => item.Res.FirstOrDefault().Frequencia)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var estatistica in item.Res)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => estatistica.Periodo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => estatistica.Frequencia)
+                    </td>
+                    @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+}

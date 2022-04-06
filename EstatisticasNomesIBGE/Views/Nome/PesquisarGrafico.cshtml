@@ -1,0 +1,61 @@
+﻿@model EstatisticasNomesIBGE.Models.Dados
+
+@{
+    ViewData["Title"] = "Resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h1>@Html.DisplayFor(modelItem => modelItem.Nome)</h1>
+    <h5>@Html.DisplayFor(modelItem => modelItem.Sexo)</h5>
+    <h5>@Html.DisplayFor(modelItem => modelItem.Localidade)</h5>
+</div>
+
+<br />
+
+<canvas id="mChart1"></canvas>
+
+@*style="padding: 0;margin: auto;display: block; "*@
+<script>
+
+    var context = document.getElementById('mChart1');
+
+    var chartGraphic = new Chart(context, {
+        type: 'line',
+        data: {
+            labels: [
+                @for (int i = 0; i < Model.Res.Count(); i++)
+                {
+                    if (i < Model.Res.Count())
+                    {
+                       @Html.Raw("'" + Model.Res[i].Periodo + "',");
+                    }
+                    else
+                    {
+                        @Html.Raw("'" + Model.Res[i].Periodo + "'").ToString();
+
+                    }
+                }
+            ],
+            datasets: [{
+                    label: 'Frequencia',
+                data: [
+                        @for (int i = 0; i < Model.Res.Count(); i++)
+                        {
+                            if (i < Model.Res.Count())
+                            {
+                                @Html.Raw("'" + Model.Res[i].Frequencia + "',");
+                            }
+                            else
+                            {
+                                @Html.Raw("'" + Model.Res[i].Frequencia + "'");
+
+                            }
+                        }],
+                borderwidth: 6,
+                backgourdColor: 'transparent',
+                    borderColor: 'rgba(77,166,253,0.85)'
+                }]
+        }
+    });
+
+</script>

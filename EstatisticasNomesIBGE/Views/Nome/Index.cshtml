@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Pesquisar nome";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.mensagem))
+        {
+<div class="alert alert-warning">@ViewBag.mensagem</div>
+        }
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-md-4">
+
+            <form id="form_pesquisa" method="post" action="@Url.ActionLink("PesquisarGrafico")">
+                <label>Nome</label>
+                <input type="text" name="Nome" id="Nome" class="form-control" />
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+            </form>
+
+        </div>
+    </div>
+</div>
