@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rotativa.AspNetCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace EstatisticasNomesIBGE
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            
 
             //services.Configure<IISOptions>(o =>
             //{
@@ -56,6 +58,8 @@ namespace EstatisticasNomesIBGE
                     name: "default",
                     pattern: "{controller=Nome}/{action=Index}");
             });
+
+            RotativaConfiguration.Setup(env.WebRootPath, @"Rotativa");
         }
     }
 }
